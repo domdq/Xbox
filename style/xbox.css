@@ -1,0 +1,17 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+:root{
+  --mainColor: #9BF00B;
+  --dark10: #0C0C0C;
+  --dark20: #777777;
+  --dark30: #C0C0C0;
+  --dark40: #FFFFFF;
+}
+
+
