@@ -56,7 +56,6 @@ header{
   align-items: center;
   justify-content: center;
   margin-top: 100px;
-  gap: 5px;
 }
 .title-header{
   display: flex;
@@ -80,6 +79,10 @@ font-size: 1.5rem;
 color: var(--mainColor);
 text-align: center  ;
 text-transform: uppercase;
+}
+/************** img header ********/
+.img-header{
+  margin-top: 48px;
 }
 /* *********** HEADER DESCRIÇÃO ***********8 */
 .descricao-header{
@@ -118,3 +121,80 @@ margin-top: 24px;
 height: 250px;
 }
 
+/* ************  Seção jogos ************* */
+.jogos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 95px;
+}
+
+/* *******************  Seção acodeon  *******************8 */
+
+.secao-acodeon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 95px;
+}
+
+#titleGreenH3{
+  font-family: 'Inter';
+font-weight: 600;
+font-style: Semi Bold;
+font-size: 3rem;
+text-align: center;
+color: var(--mainColor);
+}
+
+h3{
+font-family: 'Inter';
+font-weight: 600;
+font-style: Semi Bold;
+font-size: 3rem;
+text-align: center;
+color: var(--dark40);
+}
+
+.text-acodeon{
+  font-family: 'Inter';
+font-weight: 500;
+font-style: Medium;
+font-size: 1.5rem;
+color: var(--dark40);
+margin-top: 32px;
+}
+
+.acodeon{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+ion-icon{
+  color: var(--dark30);
+  font-size: 16px;
+}
+
+/* ************  footer ************ */
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  gap: 380px;
+  padding: 48px;
+}
+.footer-text{
+  display: flex;
+  gap: 55px;
+}
+.footer-text{
+  color: #FFFFFF;
+  font-family: 'Inter';
+font-weight: 400;
+font-style: Regular;
+font-size: 0.75rem;
+color: var(--dark20);
+}
