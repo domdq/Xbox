@@ -6,7 +6,6 @@
   font-family: 'Inter', sans-serif;
   text-decoration: none;
 list-style: none;
-max-width: 100%;
 }
 
 :root{
@@ -130,6 +129,13 @@ height: 250px;
   max-width: 100%;
 }
 
+.li-jogos{
+  img{
+  max-width: 100%;
+  height: auto;
+}
+}
+
 /* *******************  Seção acodeon  *******************8 */
 
 .acodeonInfor{
@@ -220,4 +226,133 @@ font-weight: 400;
 font-style: Regular;
 font-size: 0.75rem;
 color: var(--dark20);
+}
+
+/**************** RESPONSIVO ****************/
+
+/* ===== TABLET (até 1024px) ===== */
+@media (max-width: 1024px){
+
+  h1{
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .descricao-header{
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  #titleGreenH2,
+  #titleDescricaoH2{
+    font-size: 2.5rem;
+  }
+
+  .text-descricao{
+    font-size: 1.2rem;
+  }
+
+  .acodeon{
+    gap: 40px;
+  }
+
+  footer{
+    gap: 80px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+}
+
+
+/* ===== MOBILE (até 768px) ===== */
+@media (max-width: 768px){
+
+  nav{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ul-nav{
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  h1{
+    font-size: 2.2rem;
+  }
+
+  #titleGreenH1{
+    font-size: 1rem;
+  }
+
+  .descricao-header{
+    margin-top: 60px;
+  }
+
+  #controleXbox{
+    width: 100%;
+    height: auto;
+  }
+
+  .jogos{
+    flex-direction: column;
+  }
+
+  .titleAcodeon h3{
+    font-size: 2rem;
+  }
+
+  #titleGreenH3{
+    font-size: 2rem;
+  }
+
+  .text-acodeon{
+    font-size: 1.2rem;
+  }
+
+  .acodeon{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .lorem{
+    font-size: 1rem;
+  }
+
+  footer{
+    padding: 24px;
+  }
+
+  .footer-text{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+}
+
+
+/* ===== CELULAR PEQUENO (até 480px) ===== */
+@media (max-width: 480px){
+
+  h1{
+    font-size: 1.8rem;
+  }
+
+  #titleGreenH2,
+  #titleDescricaoH2{
+    font-size: 1.8rem;
+  }
+
+  .text-descricao{
+    font-size: 1rem;
+  }
+
+  #btn-nav{
+    padding: 10px 20px;
+    font-size: 0.7rem;
+  }
+
 }
