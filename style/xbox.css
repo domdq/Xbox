@@ -4,6 +4,8 @@
 	border: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
+  text-decoration: none;
+list-style: none;
 }
 
 :root{
@@ -14,4 +16,105 @@
   --dark40: #FFFFFF;
 }
 
+body{
+  background: #0D100C;
+}
+
+/****************** NavBar ****************/
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px;
+}
+.ul-nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 38px;
+}
+.li-nav a {
+  color: var(--dark40);
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+#btn-nav{
+  background: var(--mainColor);
+  padding: 12px 32px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  font-family: 'Inter';
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/***************** header ****************/
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 5px;
+}
+.title-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+h1{
+  font-size: 'Inter';
+  font-weight: 600;
+  font-weight: bold;
+  font-size: 4.5rem;
+  color: var(--dark40);
+}
+
+#titleGreenH1{
+  font-family: 'Inter';
+font-weight: 700;
+font-size: 1.5rem;
+color: var(--mainColor);
+text-align: center  ;
+text-transform: uppercase;
+}
+/* *********** HEADER DESCRIÇÃO ***********8 */
+.descricao-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  margin-top: 100px;
+}
+#titleGreenH2{
+    font-family: 'Inter';
+font-weight: 600;
+font-style: Semi Bold;
+font-size: 4rem;
+color: var(--mainColor);
+}
+
+#titleDescricaoH2{
+  font-family: 'Inter';
+font-weight: 600;
+font-style: Semi Bold;
+font-size: 4rem;
+color: var(--dark40);
+}
+
+.text-descricao{
+  font-family: 'Inter';
+font-weight: 500;
+font-size: 1.5rem;
+color: var(--dark30);
+margin-top: 24px;
+}
+
+#controleXbox{
+  width: 350px;
+height: 250px;
+}
 
