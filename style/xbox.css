@@ -1,11 +1,11 @@
 *{
-	margin: 0;
-	padding: 0;
-	border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
   text-decoration: none;
-list-style: none;
+  list-style: none;
 }
 
 :root{
@@ -20,36 +20,37 @@ body{
   background: #0D100C;
 }
 
-/****************** NavBar ****************/
+/******** NAV ********/
 nav{
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 24px;
 }
+
 .ul-nav{
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 38px;
 }
+
 .li-nav a {
   color: var(--dark40);
-  font-family: 'Inter';
   font-weight: 600;
   font-size: 0.875rem;
 }
+
 #btn-nav{
   background: var(--mainColor);
   padding: 12px 32px;
   border-radius: 5px;
   font-size: 0.75rem;
-  font-family: 'Inter';
   font-weight: 700;
   text-transform: uppercase;
 }
 
-/***************** header ****************/
+/******** HEADER ********/
 header{
   display: flex;
   flex-direction: column;
@@ -57,34 +58,33 @@ header{
   justify-content: center;
   margin-top: 100px;
 }
+
 .title-header{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 16px;
 }
+
 h1{
-  font-size: 'Inter';
-  font-weight: 600;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 4.5rem;
   color: var(--dark40);
 }
 
 #titleGreenH1{
-  font-family: 'Inter';
-font-weight: 700;
-font-size: 1.5rem;
-color: var(--mainColor);
-text-align: center  ;
-text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--mainColor);
+  text-align: center;
+  text-transform: uppercase;
 }
-/************** img header ********/
+
 .img-header{
   margin-top: 48px;
 }
-/* *********** HEADER DESCRIÇÃO ***********8 */
+
+/******** DESCRIÇÃO ********/
 .descricao-header{
   display: flex;
   align-items: center;
@@ -92,36 +92,32 @@ text-transform: uppercase;
   gap: 150px;
   margin-top: 100px;
 }
+
 #titleGreenH2{
-    font-family: 'Inter';
-font-weight: 600;
-font-style: Semi Bold;
-font-size: 4rem;
-color: var(--mainColor);
+  font-weight: 600;
+  font-size: 4rem;
+  color: var(--mainColor);
 }
 
 #titleDescricaoH2{
-  font-family: 'Inter';
-font-weight: 600;
-font-style: Semi Bold;
-font-size: 4rem;
-color: var(--dark40);
+  font-weight: 600;
+  font-size: 4rem;
+  color: var(--dark40);
 }
 
 .text-descricao{
-  font-family: 'Inter';
-font-weight: 500;
-font-size: 1.5rem;
-color: var(--dark30);
-margin-top: 24px;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--dark30);
+  margin-top: 24px;
 }
 
 #controleXbox{
   width: 350px;
-height: 250px;
+  height: 250px;
 }
 
-/* ************  Seção jogos ************* */
+/******** JOGOS ********/
 .jogos{
   display: flex;
   align-items: center;
@@ -129,40 +125,32 @@ height: 250px;
   margin-top: 95px;
 }
 
-/* *******************  Seção acodeon  *******************8 */
-
+/******** ACORDEON ********/
 .secao-acodeon{
   display: flex;
-  align-items: center;
   justify-content: center;
   margin-top: 95px;
 }
 
 #titleGreenH3{
-  font-family: 'Inter';
-font-weight: 600;
-font-style: Semi Bold;
-font-size: 3rem;
-text-align: center;
-color: var(--mainColor);
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: center;
+  color: var(--mainColor);
 }
 
 h3{
-font-family: 'Inter';
-font-weight: 600;
-font-style: Semi Bold;
-font-size: 3rem;
-text-align: center;
-color: var(--dark40);
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: center;
+  color: var(--dark40);
 }
 
 .text-acodeon{
-  font-family: 'Inter';
-font-weight: 500;
-font-style: Medium;
-font-size: 1.5rem;
-color: var(--dark40);
-margin-top: 32px;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--dark40);
+  margin-top: 32px;
 }
 
 .acodeon{
@@ -177,7 +165,7 @@ ion-icon{
   font-size: 16px;
 }
 
-/* ************  footer ************ */
+/******** FOOTER ********/
 footer{
   display: flex;
   align-items: center;
@@ -186,15 +174,11 @@ footer{
   gap: 380px;
   padding: 48px;
 }
+
 .footer-text{
   display: flex;
   gap: 55px;
-}
-.footer-text{
-  color: #FFFFFF;
-  font-family: 'Inter';
-font-weight: 400;
-font-style: Regular;
-font-size: 0.75rem;
-color: var(--dark20);
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: var(--dark20);
 }
