@@ -26,20 +26,21 @@ nav {
   align-items: center;
   justify-content: space-around;
   padding: 24px;
+  flex-wrap: wrap;
 }
+
 .ul-nav {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 24px;
 }
+
 .li-nav a {
   color: var(--dark40);
-  font-family: "Inter";
   font-weight: 600;
   font-size: 0.875rem;
   transition: all 0.3s ease;
-  transform: scale(1.1);
   padding: 10px;
 }
 
@@ -47,8 +48,8 @@ nav {
   color: #ffffff;
   background-color: #272727;
   cursor: pointer;
-  border: none;
   border-radius: 5px;
+  transform: scale(1.1);
 }
 
 #btn-nav {
@@ -56,7 +57,6 @@ nav {
   padding: 12px 32px;
   border-radius: 5px;
   font-size: 0.75rem;
-  font-family: "Inter";
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
@@ -82,6 +82,7 @@ header {
   justify-content: center;
   margin-top: 100px;
 }
+
 .title-header {
   display: flex;
   flex-direction: column;
@@ -89,51 +90,49 @@ header {
   justify-content: center;
   gap: 16px;
 }
+
 h1 {
-  font-family: "Inter";
   font-weight: 600;
   font-size: 4.5rem;
   color: var(--dark40);
 }
 
 #titleGreenH1 {
-  font-family: "Inter";
   font-weight: 700;
   font-size: 1.5rem;
   color: var(--mainColor);
   text-align: center;
   text-transform: uppercase;
 }
+
 /************** img header ********/
 .img-header {
   margin-top: 48px;
 }
-/* *********** HEADER DESCRIÇÃO ***********8 */
+
+/*********** HEADER DESCRIÇÃO ***********/
 .descricao-header {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 150px;
   margin-top: 100px;
+  flex-wrap: wrap;
 }
+
 #titleGreenH2 {
-  font-family: "Inter";
   font-weight: 600;
-  font-style: Semi Bold;
   font-size: 4rem;
   color: var(--mainColor);
 }
 
 #titleDescricaoH2 {
-  font-family: "Inter";
   font-weight: 600;
-  font-style: Semi Bold;
   font-size: 4rem;
   color: var(--dark40);
 }
 
 .text-descricao {
-  font-family: "Inter";
   font-weight: 500;
   font-size: 1.5rem;
   color: var(--dark30);
@@ -150,7 +149,7 @@ h1 {
   transform: scale(1.1);
 }
 
-/* ************  Seção jogos ************* */
+/************ Seção jogos *************/
 .jogos {
   display: flex;
   align-items: center;
@@ -159,14 +158,9 @@ h1 {
   max-width: 100%;
 }
 
-.li-jogos {
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
 .li-jogos img {
+  max-width: 100%;
+  height: auto;
   transition: transform 0.5s ease;
 }
 
@@ -174,41 +168,36 @@ h1 {
   transform: scale(0.9);
 }
 
-/* *******************  Seção acodeon  *******************8 */
-
+/******************* Seção accordion *******************/
 .acodeonInfor {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .titleAcodeon {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   margin-top: 95px;
 }
+
 #titleGreenH3 {
-  font-family: "Inter";
   font-weight: 600;
-  font-style: Semi Bold;
   font-size: 3rem;
   text-align: center;
   color: var(--mainColor);
 }
 
 h3 {
-  font-family: "Inter";
   font-weight: 600;
-  font-style: Semi Bold;
   font-size: 3rem;
   text-align: center;
   color: var(--dark40);
 }
 
 .text-acodeon {
-  font-family: "Inter";
   font-weight: 500;
-  font-style: Medium;
   font-size: 1.5rem;
   color: var(--dark40);
   user-select: none;
@@ -227,6 +216,11 @@ h3 {
   flex-direction: column;
   gap: 16px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.acodeon:hover {
+  transform: translateX(5px);
 }
 
 .acodeon > div {
@@ -235,8 +229,23 @@ h3 {
   justify-content: space-between;
 }
 
-.acodeon .lorem {
-  display: none;
+/* 🔥 ANIMAÇÃO DO ACCORDION */
+.lorem {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition:
+    max-height 0.4s ease,
+    opacity 0.3s ease,
+    transform 0.3s ease;
+  color: var(--dark30);
+}
+
+.acodeon-aberto .lorem {
+  max-height: 500px;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 ion-icon {
@@ -246,28 +255,16 @@ ion-icon {
 
 ion-icon.active {
   color: var(--mainColor);
-  transition: 0.3s;
-}
-
-.lorem {
-  font-family: "Inter";
-  font-weight: 500;
-  font-size: 1.125rem;
-  color: var(--dark30);
-  user-select: none;
+  transition: 0.5s;
 }
 
 .acodeon-aberto ion-icon {
   color: var(--mainColor);
   transform: rotate(180deg);
-  transition: 0.7s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
-.acodeon-aberto .lorem {
-  display: block;
-}
-
-/* ************  footer ************ */
+/************ footer ************/
 footer {
   display: flex;
   align-items: center;
@@ -275,23 +272,20 @@ footer {
   margin-top: 80px;
   gap: 380px;
   padding: 48px;
+  flex-wrap: wrap;
 }
+
 .footer-text {
   display: flex;
   gap: 55px;
-}
-.footer-text {
-  color: #ffffff;
-  font-family: "Inter";
   font-weight: 400;
-  font-style: Regular;
   font-size: 0.75rem;
   color: var(--dark20);
 }
 
 /**************** RESPONSIVO ****************/
 
-/* ===== TABLET (até 1024px) ===== */
+/* ===== TABLET ===== */
 @media (max-width: 1024px) {
   h1 {
     font-size: 3rem;
@@ -324,7 +318,7 @@ footer {
   }
 }
 
-/* ===== MOBILE (até 768px) ===== */
+/* ===== MOBILE ===== */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -358,10 +352,7 @@ footer {
     gap: 40px;
   }
 
-  .titleAcodeon h3 {
-    font-size: 2rem;
-  }
-
+  .titleAcodeon h3,
   #titleGreenH3 {
     font-size: 2rem;
   }
@@ -371,9 +362,7 @@ footer {
   }
 
   .acodeon {
-    flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
   }
 
   .lorem {
@@ -390,7 +379,7 @@ footer {
   }
 }
 
-/* ===== CELULAR PEQUENO (até 480px) ===== */
+/* ===== CELULAR PEQUENO ===== */
 @media (max-width: 480px) {
   h1 {
     font-size: 1.8rem;
