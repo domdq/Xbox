@@ -126,6 +126,6 @@ Este projeto está sob a licença **MIT** — o que significa que você pode usa
 
 <div align="center">
 
-Feito com 💚 por [Seu Nome](https://github.com/seu-usuario)
+Feito com 💚 por [Dominique](https://github.com/domdq)
 
 </div>
