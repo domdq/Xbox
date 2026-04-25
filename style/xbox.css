@@ -31,7 +31,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 38px;
+  gap: 24px;
 }
 .li-nav a {
   color: var(--dark40);
@@ -39,14 +39,14 @@ nav {
   font-weight: 600;
   font-size: 0.875rem;
   transition: all 0.3s ease;
+  transform: scale(1.1);
+  padding: 10px;
 }
 
 .li-nav a:hover {
   color: #ffffff;
   background-color: #272727;
-  transform: scale(1.1);
   cursor: pointer;
-  padding: 10px;
   border: none;
   border-radius: 5px;
 }
@@ -211,6 +211,7 @@ h3 {
   font-style: Medium;
   font-size: 1.5rem;
   color: var(--dark40);
+  user-select: none;
 }
 
 .acodeonWrap {
@@ -218,13 +219,24 @@ h3 {
   gap: 32px;
   flex-direction: column;
   margin-top: 64px;
+  width: 900px;
 }
 
 .acodeon {
   display: flex;
+  flex-direction: column;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.acodeon > div {
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 100px;
+}
+
+.acodeon .lorem {
+  display: none;
 }
 
 ion-icon {
@@ -242,6 +254,17 @@ ion-icon.active {
   font-weight: 500;
   font-size: 1.125rem;
   color: var(--dark30);
+  user-select: none;
+}
+
+.acodeon-aberto ion-icon {
+  color: var(--mainColor);
+  transform: rotate(180deg);
+  transition: 0.7s ease-in-out;
+}
+
+.acodeon-aberto .lorem {
+  display: block;
 }
 
 /* ************  footer ************ */
